@@ -55,7 +55,7 @@ set_angle(70)
 try:
   while True:
 
-    print("🟢 Motors forward")
+    print(" Motors forward")
     motorA_forward()
     motorB_forward()
     sleep(5)
