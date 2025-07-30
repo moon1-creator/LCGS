@@ -21,23 +21,23 @@ def set_servo_angle(angle):
     servo2_angle = angle
     servo1.duty_u16(angle_to_duty(servo1_angle))
     servo2.duty_u16(angle_to_duty(servo2_angle))
-    print(f"✅ Servos moved to {servo1_angle}° / {servo2_angle}°")
+    print(f"Servos moved to {servo1_angle}° / {servo2_angle}°")
     sleep(0.2)
 
 # ------------------- Input Loop -------------------
-print("Enter servo angle (0–180). Type 'exit' to quit.")
+print("Enter servo angle (0–180),type e to quit.")
 
 while True:
     try:
         user_input = input("Angle: ")
-        if user_input.lower() == 'exit':
-            print("Exiting servo control.")
+        if user_input.lower() == 'e':
+            print("Exiting servo control")
             break
         angle = float(user_input)
         set_servo_angle(angle)
     except ValueError:
-        print("⚠ Invalid input. Please enter a number between 0 and 180 or 'exit'.")
+        print(" Invalid input. Please enter a number between 0 and 180 or 'e'.")
     except KeyboardInterrupt:
-        print("\n🔁 Interrupted by user. Returning servos to 90°.")
+        print("\n Interrupted by user. Returning servos to 90°.")
 #         set_servo_angle(90)
         break
