@@ -3,6 +3,10 @@
 ## 📌 Overview
 This project showcases a gesture-controlled bot that interprets hand gestures to execute directional movements and perform shooting actions. The system uses computer vision to detect hand gestures and sends corresponding commands to an Pico W, which controls multiple servos for precise and responsive movements.
 
+## 🎥 Demo Video
+
+[![Watch Demo](https://img.youtube.com/vi/watch?v=c_3ePEDTMoI)](https://www.youtube.com/watch?v=c_3ePEDTMoI)
+
 ## 🚀 Features
 - ✋ Real-time hand gesture recognition
 - 🎯 Directional movement control (forward, backward, left, right)
